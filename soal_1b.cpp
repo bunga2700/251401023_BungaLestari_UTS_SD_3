@@ -19,14 +19,6 @@ int main(){
     }
 
     cout << endl;
-    // cout << "Rata-rata : "<< endl;
-    // for(int i=0; i<5; i++){
-    //     for (int j=0; j<4; j++){
-    //         int rata2 = nilai[0][i] + nilai[1][j];
-    //         cout << rata2;
-    //     }
-    //     cout << endl;
-    // }
 
     double rata2 = 0;
     for (int i = 0; i < 5; i++) {
@@ -42,17 +34,16 @@ int main(){
     // int rataMin = rata2 [0][0];
 
     for (int i = 0; i < 5; i++) {
-            if (nilai[i] > maks) {
-                maks = nilai[i][j];
-            }
+        if (nilai[i] > maks) {
+            maks = nilai[i][j];
+        }
 
-            if (nilai[i][j] < min) {
-                min = nilai[i][j];
-            }
+        if (nilai[i][j] < min) {
+            min = nilai[i][j];
         }
     }
-
     cout << "Rata-rata tertinggi: " << maks << endl;
     cout << "Rata-rata terendah: " << min << endl;
     cout << "Mahasiswa dengan rata-rata minimal 75:";
 }
+
